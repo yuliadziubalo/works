@@ -1,0 +1,76 @@
+body {
+    font-family: 'Mont';
+}
+
+.about-container {
+    background: #EA5C2F;
+}
+
+.about-box {
+    padding: 5.5rem 0;
+    color: white;
+}
+
+.about {
+    line-height: 1.3rem;
+    margin-top: 1rem;
+}
+
+.about span {
+	color: var(--brown);
+	font-family: 'MontBold';
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    line-height: 1.8rem;
+    flex-shrink: 4;
+}
+
+.about-heading {
+    text-shadow: 5px 5px 0px #EA5C2F;
+    font-family: 'MontBold';
+    width: 60%;
+    line-height: 4.3rem;
+    font-size: 3.7rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+li.li-item {
+    display: list-item;
+    list-style-type: disc;
+    margin: 1rem 0 0 1rem;
+}
+
+.cnc-types {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    margin: 4rem 0;
+}
+
+.about-list {
+	flex-shrink: 3;
+}
+.slide>img{
+	filter: drop-shadow(10px 10px 0 rgb(57, 39, 39));
+}
+
+.carousel {
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (max-width: 1023px) {
+	.cnc-types {
+		flex-direction: column;
+		align-items: center;
+	}
+	.about-heading {
+		font-size: 3rem;
+		width: 100%;
+	}
+	.carousel {
+		margin-top: 2rem;
+		width: 80%;
+	}
+}

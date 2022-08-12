@@ -1,0 +1,297 @@
+@mixin card_image($url) {
+	background-image: $url;
+}
+
+@mixin flexy {
+	display: flex;
+	align-items: center;
+}
+
+$tourImages: ("1": "../img/1.jpg", "2": "../img/2.jpg", "3": "../img/3.jpg");
+$font-weights: ("lght": lighter, "bd": bold);
+
+body {
+	font-family: $fontFamily;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.head {
+	background: {
+		image: $bgImage;
+		position: center center;
+	}
+	border-radius: 0% 50% 50% 0% / 0% 50% 50% 0%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	height: 100vh;
+	color:white;
+}
+
+.a {
+	@include flexy;
+	flex-direction: column;
+	margin-top: -140px;
+}
+
+.nav-list {
+	@include flexy;
+	margin-top: 30px;
+	list-style: none;
+	gap: 2rem;
+	a {
+		color: $aColor;
+	}
+}
+
+nav {
+	flex-basis: 100%;
+}
+
+.mc-heading{
+	font-size: 32px;
+	font-weight: map-get($font-weights, "lght");
+}
+
+.nav-item,
+.head-first,
+.mc-heading,
+.tour-heading,
+.reviews-heading,
+.form-heading {
+	text-align: center;
+}
+
+.tour-heading{
+	font-size: 28px;
+	padding: 0;
+	margin:0;
+	color: $tourHeadColor;
+	font-weight: map-get($font-weights, "lght");
+}
+
+.tour-descript{
+	margin:0;
+}
+
+.head-first {
+	@extend .nav-item;
+	color: white;
+	font-weight:lighter;
+}
+
+.btn {
+	background-color: transparent;
+	border: 1px solid;
+	border-color: $btnCol;
+	color: $btnCol;
+	width: 150px;
+	height: 50px;
+}
+
+.main-content {
+	@include flexy;
+	flex-direction: column;
+}
+
+.tour {
+	@include flexy;
+	box-shadow: 0px 0px 12px 0px rgba(61, 55, 61, 0.7);
+	margin: 0 0 50px 0;
+	width: 900px;
+	height: 240px;
+}
+
+.tour-img {
+	background-size: cover;
+	flex-shrink: 0;
+	width: 235px;
+	height: 240px;
+}
+
+.tour-image1 {
+	@include card_image($Image1);
+}
+
+.tour-image2 {
+	@include card_image($Image2);
+}
+
+.tour-image3 {
+	@include card_image($Image3);
+}
+
+.tour-text {
+	padding: 0 20px;
+}
+
+.reviews {
+	background-color: $rewvBoxBgColor;
+	margin: auto auto;
+	width: 1250px;
+}
+
+.reviews-heading {
+	font-weight: lighter;
+	color: $rewColor;
+	padding: 17px 0 0 0;
+	margin: 0;
+	font-size: 25px;
+}
+
+.reviews-box {
+	@include flexy;
+	padding: 0 20px;
+	gap: 20px;
+}
+
+.review {
+	@include flexy;
+	background-color: $rewvBgColor;
+	font-size: 10px;
+	color: white;
+	flex: 1;
+	margin: 20px 0;
+	padding: 10px;
+}
+
+.reviewer-img {
+	height: 85px;
+	border-radius: 50%;
+}
+
+.review-text {
+	margin-left: 28px;
+}
+
+.form-heading {
+	color: $formHeadColor;
+	padding: 40px 0 0 0;
+	font-size: 25px;
+	font-weight: lighter;
+}
+
+.search-form {
+	background-color: $formBgColor;
+	margin: auto auto;
+	width: 800px;
+	height: 140px;
+	color: $formFontColor;
+}
+
+.search {
+	input {
+		border: none;
+		border-bottom: 1px solid;
+		border-color: $formFontColor;
+		background-color: transparent;
+		font-size: 12px;
+		width: 100px;
+		color: $formFontColor;
+	}
+	select {
+		border: none;
+		border-bottom: 1px solid $formFontColor;
+		background-color: transparent;
+		color: $formFontColor;
+	}
+}
+
+.search {
+	input:nth-child(1) {
+		margin-left: 100px;
+	}
+	input:nth-child(2) {
+		margin-left: 75px;
+	}
+	select {
+		margin-left: 110px;
+	}
+}
+
+.footer {
+	display: flex;
+	background-color: $footerBgColor;
+	color: $footerTxtColor;
+	margin-top: 20px;
+	padding: 0 20px 20px 20px;
+	line-height: 15px;
+	font-size: 12px;
+	a {
+		color: $footerColor;
+		display: block;
+		padding: 0 0 0 15px;
+	}
+	.rights {
+		width: 500px;
+	}
+}
+
+.info {
+	margin-left: 150px;
+}
+
+.email-form {
+	input,
+	button {
+		height: 25px;
+		width: 100%;
+		display: inline-block;
+		box-sizing: border-box;
+		margin-bottom: 17px;
+	}
+}
+
+.feedback {
+	margin-left: 160px;
+	width: 500px;
+	button {
+		background-color: $footerBtnColor;
+		color: white;
+		border: none;
+	}
+}
+
+.soc-images img {
+	height: 30px;
+	padding-right: 15px;
+}
+
+.pay-heading {
+	padding: 0;
+	margin: 0;
+}
+
+.pay-images {
+	padding: 0;
+	img {
+		height: 30px;
+		padding-right: 15px;
+	}
+	img:nth-child(3) {
+		height: 50px;
+	}
+}
+
+.send-heading {
+	padding-top: 10px;
+	color: black;
+}
+
+.f-heading,
+.pay-heading,
+.send-heading {
+	font-weight: map-get($font-weights, "bd");
+	font-size: 15px;
+}
+
+.rights{
+	color:$copyRightColor;
+}

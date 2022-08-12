@@ -1,0 +1,16 @@
+ul{
+	font-size: 21px;
+} 
+.back{
+	background: linear-gradient(90deg, rgba(0,0,0,0.80) 20%, rgba(0,0,0,0.80) 100%), url(../img/header-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.head-p{
+	font-style: italic;
+}
+nav, .learn, .foot{
+	background-color: #343A40FF;
+}
+
+

@@ -1,0 +1,389 @@
+*, *::before, *::after {
+     box-sizing: border-box;
+}
+ a, button {
+     text-decoration: none;
+     cursor: pointer;
+}
+ ul, ol {
+     padding: 0;
+     list-style-type: none;
+}
+ body, h1, h2, h3, h4, p, ul[class], ol[class], li, pre {
+     margin: 0;
+}
+ input, button, textarea, select {
+     font: inherit;
+}
+ body{
+     font-family: system-ui, sans-serif;
+     background-color: #FBF9FAFF;
+     letter-spacing: -0.03em;
+     padding: 0;
+     margin:0;
+     font-weight: 200;
+}
+
+/*----------NAV-------------*/
+ nav{
+     margin-left: 370px;
+}
+ .nav-item a{
+     color: black;
+     font-size: 24px;
+     font-weight: 300;
+}
+ .nav-list, .services{
+ 	 display: flex;
+     flex-wrap: wrap;
+ }
+ .nav-list {
+     column-gap: 3.2em;
+     justify-content: flex-end;
+}
+ .nav-item{
+     margin-top: 2.4vh;
+     flex-grow: 1;
+     flex-shrink: 1;
+}
+/*---------HEADER-----------*/
+ h1{
+     font-size: 41px;
+     font-weight: 400;
+     color: #e2ba7b;
+     display: inline;
+     letter-spacing: -0.055rem;
+}
+ .head-img{
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     height: 600px;
+     z-index: -1;
+}
+ .head-p{
+     display: inline;
+     letter-spacing: -0.01rem;
+}
+ .head-description{
+     margin: 12vh 0 20vh 0;
+     margin-left: 39.5vw;
+     font-size: 39px;
+     font-weight: 300;
+}
+ .learn{
+     margin-top: 4.7vh;
+     height: 6vh;
+     display: block;
+     font-size: 17px;
+     font-weight: 400;
+     background-color: transparent;
+     border:none;
+     padding: 0 5vw;
+     border-left: 1px solid #65aa44;
+     border-right: 1px solid #65aa44;
+}
+/*---------MAIN-------------*/
+ h2{
+     font-size: 30px;
+     border:none;
+     border-left: 10px solid #65aa44;
+     border-bottom: 2px solid #65aa44;
+     padding: 0px 10px 5px 10px;
+     font-weight: 450;
+     margin-bottom: 17px;
+}
+ h3{
+     font-size: 30px;
+     margin-bottom: 11px;
+     color: #65aa44;
+}
+ .prices, .offers, article, .offers-text, .news{
+     padding: 16px 5vw 50px 5vw;
+}
+/*---------COMPANIES-------------*/
+ .companies{
+     display: flex;
+     column-gap:4.8vw;
+     margin-top: 16px;
+}
+ .company{
+     flex-basis: 100%;
+}
+/*---------OFFERS-------------*/
+ .offers{
+     background-color: white;
+}
+ .offers-sub-p{
+     margin: 15px 0 15px 0;
+}
+ .service{
+     display: flex;
+     font-size: 1.1em;
+     font-weight: 700;
+     column-gap: 25px;
+     align-items: center;
+     flex-grow: 1;
+     flex-shrink: 1;
+}
+
+/*--------PRICES-TABLE-------*/
+ table, th, td{
+     border: 3px solid #e2ba7b;
+     border-collapse: collapse;
+     text-align: center;
+}
+ table{
+     width: 100%;
+     margin: 15px 0;
+}
+ th, td{
+     padding: 9px 0;
+}
+ th{
+     font-weight: 500;
+}
+td:first-child{
+     font-weight: 500;
+}
+/*------OFFER-TEXT----------*/
+ .offers-text{
+     background-color: white;
+}
+ .offer-list{
+     padding-top: 15px;
+}
+ .list-item::before {
+     content: "\2022";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+     color: #e2ba7b;
+     font-weight: bold;
+     display: inline-block;
+     width: 1em;
+     margin-left: 1em;
+}
+/*---------NEWS-------------*/
+ h4{
+     font-weight: 500;
+     letter-spacing: -0.007rem;
+}
+ .card-img img{
+     height: 129px;
+     width: 100px;
+}
+ .news-cards{
+     display: flex;
+     column-gap: 23px;
+}
+ .card{
+     box-shadow: 0px 0px 12px 0px #D3D3D3;
+     display: flex;
+     flex-basis: 100%;
+     padding: 10px;
+}
+ .card-description{
+     padding: 0 10px;
+}
+ .date{
+     color: #808080;
+}
+/*---------FOOTER-------------*/
+ .footer{
+     background-color: #F5F5F5FF;
+     padding: 15px 2.5vw 30px 2.5vw;
+     display: flex;
+     flex-direction: row;
+     column-gap: 2.5rem;
+}
+ .contacts{
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     align-items: flex-start;
+     justify-content: space-between;
+}
+ .contact-p{
+     font-size: 18px;
+     font-weight: bold;
+     letter-spacing: -0.009rem;
+}
+ .contact-img{
+     width: 1.8vw;
+}
+ .footer-content{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     column-gap: 2rem;
+}
+ .foot{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     column-gap: 1rem;
+}
+ h5{
+     font-size: 19px;
+     margin:0;
+}
+ pre{
+     font-family: inherit;
+}
+ @media screen and (min-width: 769px) and (max-width: 991px){
+     nav{
+         margin-left: 25vw;
+    }
+     .nav-item{
+         flex-basis: 100px;
+    }
+     .nav-list{
+         column-gap: 1vw;
+         text-align: center;
+    }
+     h1{
+         font-size: 0.75em;
+    }
+     .head-p{
+         font-size: 0.75em;
+    }
+     .head-description{
+         margin-bottom: 10vh;
+    }
+     .service{
+         flex-basis: 50%;
+         height: 50px;
+    }
+     .news{
+         padding-bottom: 5px;
+    }
+     .news-cards{
+         flex-wrap: wrap;
+    }
+     .card-description{
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         margin-left: 3vw;
+    }
+     .card{
+         margin-bottom: 20px;
+    }
+     .card-img img{
+         width: 125px;
+         height: 125px;
+    }
+     .footer{
+         flex-direction: column;
+    }
+     .contacts p{
+         flex-basis: 100%;
+    }
+     .contacts{
+         flex-direction: row;
+         justify-content: flex-start;
+         align-items: center;
+         column-gap: 5px;
+    }
+     .foot-head{
+         width: 270px;
+    }
+     .foot{
+         margin-top: 10px;
+    }
+     .contact-img{
+         width: 2vw;
+    }
+}
+ @media screen and (max-width: 768px){
+     .news-cards{
+         flex-wrap: wrap;
+    }
+     nav{
+         margin:0;
+         margin-bottom: 25vh;
+    }
+     .nav-list{
+         column-gap: 0;
+    }
+     .prices, .offers, article, .offers-text, .news{
+         padding: 16px 5vw 15px 5vw;
+    }
+     .nav-item{
+         flex-basis: 33%;
+         line-height: 56px;
+         text-align: center;
+    }
+     .head-description{
+         margin: 0;
+         text-align: center;
+         font-size:1.5rem;
+    }
+     .learn{
+         margin: 20px auto;
+    }
+     body{
+         font-size: 1.3rem;
+    }
+     .companies{
+         flex-wrap: wrap;
+    }
+     .company{
+         margin-bottom: 30px;
+    }
+     article{
+         padding-bottom: 0;
+    }
+     .service{
+         flex-basis: 100%;
+         margin-bottom: 20px;
+         column-gap: 6vw;
+    }
+     .prices{
+         display: none;
+    }
+     .news{
+         padding-bottom: 5px;
+    }
+     .card-description{
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         margin-left: 3vw;
+    }
+     .card{
+         margin-bottom: 20px;
+    }
+     h4{
+         font-size: 1.1rem;
+    }
+     .card-img img{
+         width: 125px;
+         height: 125px;
+    }
+     .footer{
+         flex-direction: column;
+         padding-left: 5vw;
+    }
+     .contacts p{
+         flex-basis: 100%;
+    }
+     .contacts{
+         flex-direction: row;
+         justify-content: flex-start;
+         align-items: center;
+         column-gap: 5px;
+    }
+     .foot-head{
+         width: 250px;
+    }
+     .foot{
+         margin-top: 10px;
+    }
+     .contact-img{
+         width: 5vw;
+    }
+     h5{
+         font-size: 1.5rem;
+    }
+}
+ 

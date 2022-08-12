@@ -1,0 +1,13 @@
+#root{
+	text-align: center;
+}
+
+#characters-wrap{
+	border: 3px solid black;
+	margin: 25px auto;
+	width: 75%;
+}
+
+.character img{
+	height: 100px;
+}
